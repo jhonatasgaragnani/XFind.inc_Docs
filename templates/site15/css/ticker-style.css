@@ -1,0 +1,96 @@
+/* Ticker Styling */
+.ticker-wrapper.has-js {
+	position: relative;
+	margin-bottom: 0px;
+	width: 92.25%;
+	min-height: 33px;
+	float: left;
+	display: block;
+	background-color: #494949;
+}
+
+.ticker-wrapper.has-js:before {
+	content: url('../images/recentpost.png');
+	position: absolute;
+	z-index: 1000;
+	top: 10px;
+	left: 13px;
+}
+
+.ticker {
+	width: 91%;
+	height: 33px;
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+
+.ticker-title {
+	padding-top: 12px;
+	margin-left: 35px;
+	color: #fff;
+	text-shadow: 1px 0 1px #000;
+	width:115px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.ticker-content {
+	margin: 0px;
+	padding-top:6px;
+	position: absolute;
+	color: #bfbfbf;
+	font-size: 13px;
+	line-height: 22px;
+	font-family: georgia;
+	font-style: italic;
+	overflow: hidden;
+}
+
+.ticker-content a {
+	text-decoration: none;	
+	color: #bfbfbf;
+}
+.ticker-content a:hover {
+	text-decoration: underline;	
+	color: #bfbfbf;
+}
+
+.ticker-controls li.jnt-prev {
+	background: #7da817	url('../images/prev-recent.png') center no-repeat;
+	right:-3.9%;
+}
+
+.ticker-controls li.jnt-next {
+	background: #7da817 url('../images/next-recent.png')  center no-repeat;	
+	right:-7.9%;
+}
+
+.ticker-controls li.jnt-prev,
+.ticker-controls li.jnt-next {
+	position: absolute;
+	cursor: pointer;
+	width: 3.9%;
+	height: 26px;
+	top:0;
+	transition: opacity 0.2s linear;
+	-moz-transition: opacity 0.2s linear;
+	-webkit-transition: opacity 0.2s linear;
+	-o-transition: opacity 0.2s linear;
+}
+
+.ticker-controls li.jnt-prev:hover,
+.ticker-controls li.jnt-next:hover {
+	opacity: 0.8;
+}
+
+.js-hidden {
+	display: none;
+}
+
+.left .ticker-content, .left .ticker-title, .left .ticker {
+    float: left;
+}
+
+.right .ticker-content, .right .ticker-title, .right .ticker {
+    float: right;
+}

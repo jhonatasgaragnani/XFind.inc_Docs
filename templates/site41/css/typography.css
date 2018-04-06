@@ -1,0 +1,109 @@
+body{
+	font-family: 'PT Sans', sans-serif;
+	font-size:13px;
+	line-height:20px;
+}
+.home_title{
+	font-family: "Open Sans Light";
+	font-size:30px;
+	font-weight:100;
+	color:#656565;
+	text-align:center;
+	text-decoration:none;
+	line-height:35px;
+}
+.home_title span{
+	font-family: "Open Sans Extrabold";
+	font-size:45px;
+	font-weight:100;
+	text-align:center;
+	text-decoration:none;
+	text-transform:uppercase;
+	line-height:55px;
+}
+.logo{
+	font-family: 'Cookie', cursive;
+	font-size:36px;
+	line-height:40px;
+	text-decoration:none;
+	text-align:left;
+	padding:3px 0px;
+	letter-spacing:1px;
+}
+.logo span{color:#b5b5b5;}
+h1,h2,h3,h4,h5,h6{	font-family: 'Open Sans', sans-serif; }
+.tag, .box_heading, .news_heading, .video_heading, .footer_copy{font-family: 'Open Sans', sans-serif; }
+.price_heading, .price_tag, .price_month, .prices, .try_text, .notes ul li, .account_button{font-family: 'Open Sans', sans-serif;}
+h1 {
+	font-size:35px; 
+	font-weight:100;
+	text-align:left;
+	text-decoration:none;
+	text-transform:uppercase;
+	padding:28px 0px 0px 0px;
+	line-height:35px;
+	letter-spacing:-1px;
+}
+h2{	
+	font-size:34px; 
+	color:#000000;	
+	font-weight:bold; 
+	letter-spacing:-3px;
+	text-transform:uppercase;	
+	padding-top:58px;
+	padding-bottom:11px;
+}
+.tag{
+	font-family: 'PT Sans ', sans-serif;
+	color:#656565;
+	font-size:18px;
+	font-style:italic;
+	line-height:25px;
+	padding-bottom:67px;
+	font-weight:normal; 
+	display:block;
+	padding-top:15px;
+}
+h3{ 
+	font-size:30px; 
+	font-weight:100; 
+	letter-spacing:1px;
+	padding-bottom:17px;
+}
+h5{ font-weight:bold; color:#656565; font-size:20px;}
+h4{ font-size:20px; color: #000000; font-weight:500; padding-top:25px; padding-bottom:13px;}
+
+p{ color:#656565; padding-bottom:9px; }
+.box_heading{ font-size:22px; line-height:25px; color:#000000; padding-bottom:20px;}
+.box_heading span{ font-size:30px; font-weight:bold;}
+.sub_title{ font-style:italic; font-size:13px; color:#656565; font-weight:bold; padding-bottom:23px;}
+
+.news_heading{ font-size:18px; line-height:20px; padding-bottom:6px;}
+.news_date{ font-style:italic; color:#656565; font-size:13px; font-weight:700; }
+
+.video_heading{ color:#000000; font-size:25px; text-transform:uppercase; padding-bottom:14px;}
+
+.price_heading{ font-size:22px; color:#656565;  }
+.price_tag, .price_month{ font-size:20; color:#b5b5b5; font-weight:700;}
+.prices{ font-size:21px; font-weight:700;}
+.list_items p, .list_last_item p{ color:#666666; padding-left:20px; margin-top:-5px; padding-right:30px;}
+.try_text{ font-size:32px; color:#656565; font-weight:bold;}
+.notes ul li{ color:#656565; font-size:14px;}
+.account_button{ color:#b5b5b5; font-size:16px; text-transform:uppercase; font-weight:bold; line-height:56px; letter-spacing:-1px;}
+
+.form_label{
+	font-family: 'PT Sans ', sans-serif;
+	color:#656565;
+	font-size:14px;
+	padding:12px 0px 0px 15px;
+}
+#respond label.error{
+	font-size:12px;
+	color:#e92a0b;	
+	line-height:20px;
+	text-align:left;
+}
+.client_title{font-size:20px; color:#656565; margin: 11px 0 10px 0; line-height: 150%;  text-transform:capitalize;}
+.numbers{font-size:25px; font-weight:100; color:#ffffff; text-align:center; line-height:15px;  }
+
+.footer_copy{ font-size:13px; color:#656565; font-weight:500; padding-top:24px;}

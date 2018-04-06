@@ -1,0 +1,240 @@
+/* CSS Document */
+#bg{
+	background: url(../images/sequence_slides/about_bg.jpg) repeat;
+	margin:0px auto;
+	height:650px;
+}
+#sequence {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	backface-visibility: hidden;
+	overflow: hidden;
+}
+#sequence ul {margin: 0;}
+#sequence ul li{ 
+	z-index: 1;
+	margin: 0px !important;
+	list-style:none;
+}
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top:293px;
+	height: 41px;
+	width: 41px;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    filter: alpha(opacity=0); 
+    opacity: 0;
+	z-index:999999;
+}
+.prev {left: 40px;}
+.next {right: 40px;}
+
+#sequence li > * {position: absolute;}
+#sequence {
+	height: 650px;
+	margin: 0 auto;
+	position: relative;
+	max-width:1400px;
+}
+.info {
+	color: black;
+	left: 70%;
+	top:10%;
+	width:50%;
+	z-index: 10;
+	vertical-align: middle;
+    opacity: 0;
+    filter: alpha(opacity=0);
+	background-image:url(../images/sequence_slides/home-line2.png);
+	background-repeat:no-repeat;
+	background-position:left top;
+	height:auto;
+}
+.info.animate-in {
+	left: 15%;
+	top:44%;
+    opacity: 1;
+    filter: alpha(opacity=100); 	
+	-webkit-transition: all 0.6s ease-in;
+	-moz-transition: all 0.6s ease-in;
+	-ms-transition: all 0.6s ease-in;
+	-o-transition: all 0.6s ease-in;
+	transition: all 0.6s ease-in;
+}
+.info.animate-out {
+	left: 80%;
+    filter: alpha(opacity=0); 
+    opacity: 0;
+	-webkit-transition: all 0.6s ease-out;
+	-moz-transition: all 0.6s ease-out;
+	-ms-transition: all 0.6s ease-out;
+	-o-transition: all 0.6s ease-out;
+	transition: all 0.6s ease-out;
+}
+.info a.link{
+	color: #3c4549;
+	width:80%;
+	font-size: 14px;
+	line-height: 25px;
+	text-shadow: 0 1px 0 rgba(256, 256, 256, 0.5);
+	margin: 0 0 14px;
+}
+.slider_img {
+	left: -120%;
+	top: 0px;
+    filter: alpha(opacity=0); 
+    opacity: 0;
+	z-index: 6;
+}
+.slider_img.animate-in {
+	left:50%;
+	top: 10%;
+    filter: alpha(opacity=100); 
+    opacity: 1;
+	z-index: 4;
+	-webkit-transition: all 0.6s ease-in;
+	-moz-transition: all 0.6s ease-in;
+	-ms-transition: all 0.6s ease-in;
+	-o-transition: all 0.6s ease-in;
+	transition: all 0.6s ease-in;
+}
+
+.slider_img.animate-out {
+	left: -65%;
+	top: 0px;
+    filter: alpha(opacity=0); 
+    opacity: 0;
+	z-index: 2;
+	-webkit-transition: all 0.6s ease-in;
+	-moz-transition: all 0.6s ease-in;
+	-ms-transition: all 0.6s ease-in;
+	-o-transition: all 0.6s ease-in;
+	transition: all 0.6s ease-in;
+}
+.slider_img1.animate-in {
+	left:50%;
+	top:10%;
+    filter: alpha(opacity=100); 
+    opacity: 1;
+	z-index: 4;
+	-webkit-transition: all 0.6s ease-in;
+	-moz-transition: all 0.6s ease-in;
+	-ms-transition: all 0.6s ease-in;
+	-o-transition: all 0.6s ease-in;
+	transition: all 0.6s ease-in;	
+}
+.slider_img1.animate-out {
+	left: -65%;
+	top: 0px;
+    filter: alpha(opacity=0); 
+    opacity: 0;
+	z-index: 2;
+   -webkit-transition: all 0.6s ease-in;
+	-moz-transition: all 0.6s ease-in;
+	-ms-transition: all 0.6s ease-in;
+	-o-transition: all 0.6s ease-in;
+	transition: all 0.6s ease-in;	
+}
+.slider_img2 {
+	left: -120%;
+    filter: alpha(opacity=0); 
+    opacity: 0;
+	z-index: 6;
+	margin-top:24px;
+}
+.slider_img2.animate-in {
+	left:50%;
+	top: 10%;
+    filter: alpha(opacity=100); 
+    opacity: 1;
+	z-index: 4;
+	-webkit-transition: all 0.8s ease-in;
+	-moz-transition: all 0.8s ease-in;
+	-ms-transition: all 0.8s ease-in;
+	-o-transition: all 0.8s ease-in;
+	transition: all 0.8s ease-in;
+}
+.slider_img2.animate-out {
+	left: -65%;
+	top: 0px;
+    filter: alpha(opacity=0); 
+    opacity: 0;
+	z-index: 2;
+	-webkit-transition: all 0.8s ease-in;
+	-moz-transition: all 0.8s ease-in;
+	-ms-transition: all 0.8s ease-in;
+	-o-transition: all 0.8s ease-in;
+	transition: all 0.8s ease-in;	
+}
+
+.slider_img1{	
+	left:0%;
+	top: 0px;
+    filter: alpha(opacity=0); 
+    opacity: 0;
+	z-index: 6;
+}
+.slider_img1{top:5px;}
+.slider_img2{top:6px;}
+
+.sequence-preloader .preloading .circle {fill: #ccc !important;}
+div.inline{ background-color: #ccc !important;}
+.clr{ clear:both}
+.tag1 { font-size:30px; color:#ffffff; padding:18px 0px 0px 0px; /*text-shadow:1px 1px 1px #f7f6f6;*/ font-family:"Open Sans Light", Arial; text-align:center; font-style:normal; line-height:42px;  }
+.sub-tag1{font-family:"Open Sans", Arial;font-size:45px;text-transform:uppercase;margin:0px 0px 0px 0px;font-weight:bold;text-align:center ;font-style:normal;padding:10px 0px; color:#f2c431; !important}
+
+.more_bg{ width:100%; height:auto; clear:both; margin:-90px auto 0px auto; z-index:999999; position:relative}
+.small-tag { font-size:16px; color:#ffffff; padding:18px 0px 0px 0px; font-family:"Open Sans Light", Arial; text-align:center  }	
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+#bg{ height:600px;}
+#sequence{ height:600px;}
+
+/* Sequence slider */
+.prev, .next { top: 40%; height: 30px; width: 30px;  }	
+.prev 	{ left: 40px; }
+.next 	{ right: 50px; }
+.next > span, .prev > span { margin: 4px; } 
+.info {	top: 25%;  }
+.info.animate-in { top: 25%; left:20%;  }
+.info a.link { font-size: 10px; line-height: 22px;margin: 0 0 10px;}  
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+#bg{ height:300px;}
+#sequence { height: 300px; }
+/* Sequence slider */
+.prev, .next { top: 10%; height: 30px; width: 30px;}	
+.prev 	{ left: 0px; }
+.next 	{ right: 20px; }
+.next > span, .prev > span { margin: 4px; } 
+.info {	top: 4%; width:60%;}
+.info.animate-in { top: 4%; left:20%; }
+.tag1 { font-size:18px; line-height:30px;  }
+.sub-tag1{ font-size:25px; padding:20px 0px;}
+.info a.link { font-size: 10px; line-height: 22px;margin: 0 0 10px;}  
+}
+
+@media only screen and (max-width: 479px) {
+#bg{ height:350px; }
+#sequence { height: 350px; }
+.info {	top: 4%; width:60%; }
+.info.animate-in { top: 4%; left:20%; }
+.tag1 { font-size:18px; line-height:30px;  }
+.sub-tag1{ font-size:25px; padding:20px 0px;}
+.slider_img.animate-in { left:40%; top: 10%; }
+.slider_img1.animate-in { left:40%; top:10%; } 
+.slider_img2.animate-in { left:40%; top: 10%; }
+
+/* Sequence slider */
+.prev, .next { top: 35%; height: 30px; width: 30px; }
+.prev 	{ left: 10px; }
+.next 	{ right: 20px; }
+.next > span, .prev > span { margin: 4px; } 	
+.info a.link { font-size: 10px;line-height: 18px;margin: 0 0 0px;}  
+}

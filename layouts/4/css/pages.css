@@ -1,0 +1,925 @@
+/*
+// Table of content
+// -----------------------------------------------------------------------------
+// - 1. Homepage
+// - 2. About Page
+// - 3. Work Page
+// - 4. Work Detail Page
+// - 5. News Page
+// - 6. News Detail Page
+// - 7. Contact Page
+*/
+/* -----------------------------------------------------------------------------
+// 1. Homepage
+// ----------------------------------------------------------------------------- */
+.homepage .section-headline {
+  margin-bottom: 50px;
+  text-align: center; }
+  .homepage .section-headline h3 {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 500; }
+  .homepage .section-headline p {
+    font-size: 18px; }
+.homepage .hero-slider {
+  position: relative;
+  max-height: 700px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #000; }
+  .homepage .hero-slider .content {
+    position: absolute;
+    top: 47%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  .homepage .hero-slider img {
+    opacity: .7; }
+  .homepage .hero-slider h2 {
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    line-height: 56px;
+    font-weight: 500;
+    font-size: 72px;
+    color: #fff; }
+    .homepage .hero-slider h2 small {
+      display: block;
+      letter-spacing: 3px;
+      font-size: 24px;
+      color: #fff;
+      margin-top: 20px; }
+    .homepage .hero-slider h2:before {
+      content: ' ';
+      width: 130px;
+      height: 4px;
+      background-color: #fff;
+      display: block;
+      border-radius: 2px;
+      margin: 0 auto 30px auto; }
+  .homepage .hero-slider .btn {
+    margin-right: 10px; }
+  .homepage .hero-slider .owl-buttons .owl-prev,
+  .homepage .hero-slider .owl-buttons .owl-next {
+    position: absolute;
+    top: 47%;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    text-align: center;
+    color: #fff;
+    opacity: 1; }
+    .homepage .hero-slider .owl-buttons .owl-prev i,
+    .homepage .hero-slider .owl-buttons .owl-next i {
+      font-size: 36px;
+      line-height: 50px; }
+  .homepage .hero-slider .owl-buttons .owl-prev {
+    left: 10%; }
+  .homepage .hero-slider .owl-buttons .owl-next {
+    right: 10%; }
+  @media (max-width: 992px) {
+    .homepage .hero-slider .owl-buttons {
+      display: none; } }
+@media (max-width: 768px) {
+  .homepage .hero-slider .content {
+    top: 50%; }
+  .homepage .hero-slider h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 20px; }
+    .homepage .hero-slider h2 small {
+      font-size: 14px; }
+  .homepage .hero-slider .btn {
+    font-size: 12px;
+    padding: 10px 15px; } }
+.homepage .welcome {
+  border-bottom: 1px solid #e5e5e5; }
+.homepage .projects .item {
+  position: relative;
+  margin-bottom: 30px; }
+  .homepage .projects .item:hover .caption {
+    opacity: 1; }
+.homepage .projects .caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.85);
+  opacity: 0;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s; }
+  .homepage .projects .caption .align {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    text-align: center;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  .homepage .projects .caption h3 {
+    margin-bottom: 3px;
+    font-size: 12px;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
+  .homepage .projects .caption .item-category {
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase; }
+.homepage .community {
+  position: relative;
+  overflow: hidden; }
+  .homepage .community img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%; }
+  .homepage .community .content {
+    padding: 100px 0 100px 80px; }
+  @media (max-width: 992px) {
+    .homepage .community .content {
+      padding: 100px 0 100px 15px; } }
+  .homepage .community h2 {
+    margin-bottom: 30px;
+    font-weight: 500;
+    text-transform: uppercase; }
+    .homepage .community h2 + p {
+      margin-bottom: 50px; }
+  .homepage .community i {
+    font-size: 28px;
+    color: #c4c4c4; }
+  .homepage .community h4 {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #4b4b4b; }
+.homepage .testimonials {
+  background: url(http://placehold.it/1895x1000) center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .homepage .testimonials .section-headline h3 {
+    color: #fff; }
+.homepage .clients img {
+  opacity: .5;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -ms-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s; }
+  .homepage .clients img:hover {
+    opacity: 1; }
+.homepage .clients .owl-pagination {
+  position: absolute;
+  bottom: -50px; }
+  .homepage .clients .owl-pagination .owl-page + .owl-page {
+    margin-left: 15px; }
+  .homepage .clients .owl-pagination .owl-page span {
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    margin: 0;
+    opacity: 1;
+    border: none;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    background-color: #c4c4c4; }
+  .homepage .clients .owl-pagination .owl-page.active span {
+    position: relative;
+    border: none;
+    background-color: #bc5b6e;
+    z-index: 10; }
+  .homepage .clients .owl-pagination .owl-page.active span:before {
+    content: ' ';
+    position: absolute;
+    top: -9px;
+    left: -9px;
+    background-color: #c4c4c4;
+    opacity: .2;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 100%; }
+@media (max-width: 992px) {
+  .homepage .clients img {
+    margin-bottom: 30px; } }
+
+/* -----------------------------------------------------------------------------
+// 2. About Page
+// ----------------------------------------------------------------------------- */
+.about .section-headline {
+  margin-bottom: 50px;
+  text-align: center; }
+  .about .section-headline h3 {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 500; }
+  .about .section-headline p {
+    font-size: 18px; }
+.about .hero-title {
+  background: url(http://placehold.it/1895x1000) center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+.about .team {
+  border-bottom: 1px solid #e5e5e5; }
+.about .info h4 {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: 500; }
+.about .info strong {
+  color: #9c9c9c; }
+.about .testimonials {
+  background: url(http://placehold.it/1895x1000) center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .about .testimonials .section-headline h3 {
+    color: #fff; }
+.about .pub img {
+  width: 33%; }
+.about .pub img + img {
+  margin-left: .1%; }
+@media (max-width: 992px) {
+  .about .pub img {
+    width: 32%; } }
+.about .clients .owl-item {
+  text-align: center; }
+.about .clients img {
+  opacity: .5;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -ms-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s; }
+  .about .clients img:hover {
+    opacity: 1; }
+.about .clients .owl-pagination {
+  position: absolute;
+  bottom: -50px; }
+  .about .clients .owl-pagination .owl-page + .owl-page {
+    margin-left: 15px; }
+  .about .clients .owl-pagination .owl-page span {
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    margin: 0;
+    opacity: 1;
+    border: none;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    background-color: #c4c4c4; }
+  .about .clients .owl-pagination .owl-page.active span {
+    position: relative;
+    border: none;
+    background-color: #bc5b6e;
+    z-index: 10; }
+  .about .clients .owl-pagination .owl-page.active span:before {
+    content: ' ';
+    position: absolute;
+    top: -9px;
+    left: -9px;
+    background-color: #c4c4c4;
+    opacity: .2;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 100%; }
+@media (max-width: 992px) {
+  .about .clients img {
+    margin-bottom: 30px; } }
+.about .skills .progress-item {
+  text-align: center; }
+  .about .skills .progress-item strong {
+    font-family: "Oswald", Helvetica, Arial, sans-serif;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    left: 0;
+    color: #4b4b4b;
+    font-weight: normal;
+    font-size: 30px; }
+  .about .skills .progress-item h4 {
+    font-weight: 500;
+    margin: 30px 0 25px 0;
+    text-transform: uppercase;
+    color: #4b4b4b; }
+    .about .skills .progress-item h4 + p {
+      padding: 0 15px;
+      margin-bottom: 20px; }
+
+/* -----------------------------------------------------------------------------
+// 3. Work Page
+// ----------------------------------------------------------------------------- */
+.work .section-headline {
+  margin-bottom: 50px;
+  text-align: center; }
+  .work .section-headline h3 {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 500; }
+  .work .section-headline p {
+    font-size: 18px; }
+.work .hero-title {
+  background: url(http://placehold.it/1895x1000) center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+.work .portfolio-filter {
+  margin-bottom: 40px; }
+  .work .portfolio-filter:before, .work .portfolio-filter:after {
+    content: " ";
+    display: table; }
+  .work .portfolio-filter:after {
+    clear: both; }
+  .work .portfolio-filter ul {
+    float: left;
+    display: inline-block;
+    padding: 0; }
+  .work .portfolio-filter li {
+    display: inline-block;
+    margin-right: 15px;
+    color: #9c9c9c;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: "Oswald", Helvetica, Arial, sans-serif; }
+    .work .portfolio-filter li.active, .work .portfolio-filter li.active:hover {
+      color: #bc5b6e;
+      cursor: auto; }
+    .work .portfolio-filter li:hover {
+      cursor: pointer;
+      color: #4b4b4b; }
+  .work .portfolio-filter .btn {
+    float: right;
+    margin-top: -8px;
+    background-color: #e5e5e5;
+    border-color: #e5e5e5;
+    font-size: 12px;
+    color: #9c9c9c;
+    padding: 12px 15px 12px 20px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+    .work .portfolio-filter .btn i {
+      display: inline-block;
+      margin-left: 20px; }
+    .work .portfolio-filter .btn:hover {
+      background-color: transparent;
+      border-color: #9c9c9c; }
+.work .portfolio .item {
+  position: relative;
+  margin-bottom: 30px; }
+  .work .portfolio .item:hover .caption {
+    opacity: 1; }
+.work .portfolio .caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.85);
+  opacity: 0;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s; }
+  .work .portfolio .caption .align {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    text-align: center;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%); }
+    .work .portfolio .caption .align:hover {
+      text-decoration: none; }
+  .work .portfolio .caption em {
+    display: block;
+    margin-bottom: 3px;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: normal;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
+  .work .portfolio .caption .item-category {
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase; }
+
+/* -----------------------------------------------------------------------------
+// 4. Work Detail Page
+// ----------------------------------------------------------------------------- */
+.work-detail .section-headline {
+  margin-bottom: 50px;
+  text-align: center; }
+  .work-detail .section-headline h3 {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 500; }
+  .work-detail .section-headline p {
+    font-size: 18px; }
+.work-detail .hero-title {
+  position: relative;
+  padding: 300px 0;
+  background: url(http://placehold.it/1895x1000) center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .work-detail .hero-title:after {
+    position: absolute;
+    bottom: 50px;
+    font-family: "linea-arrows-10";
+    content: '\e064';
+    color: #fff;
+    font-size: 36px; }
+  .work-detail .hero-title:hover:after {
+    -webkit-animation: slideUpnDown 2s infinite;
+    /* Safari 4+ */
+    -moz-animation: slideUpnDown 2s infinite;
+    /* Fx 5+ */
+    -o-animation: slideUpnDown 2s infinite;
+    /* Opera 12+ */
+    animation: slideUpnDown 2s infinite;
+    /* IE 10+, Fx 29+ */ }
+.work-detail .banner {
+  padding: 150px 0;
+  text-align: center;
+  background: url(http://placehold.it/1895x1000) center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .work-detail .banner h3 {
+    margin-bottom: 30px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 28px; }
+  .work-detail .banner p {
+    color: #fff;
+    opacity: .7; }
+.work-detail .projects .section-headline {
+  margin-top: 50px; }
+.work-detail .projects .item {
+  position: relative;
+  width: 20%;
+  float: left; }
+  .work-detail .projects .item:hover .caption {
+    opacity: 1; }
+@media (max-width: 992px) {
+  .work-detail .projects .item {
+    width: 50%; } }
+@media (max-width: 768px) {
+  .work-detail .projects .item {
+    width: 100%; } }
+.work-detail .projects .caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.85);
+  opacity: 0;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s; }
+  .work-detail .projects .caption .align {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    text-align: center;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%); }
+    .work-detail .projects .caption .align:hover {
+      text-decoration: none; }
+  .work-detail .projects .caption em {
+    display: block;
+    margin-bottom: 3px;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: normal;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
+  .work-detail .projects .caption .item-category {
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase; }
+.work-detail .share {
+  text-align: center; }
+  .work-detail .share .social {
+    padding: 0;
+    margin-top: 20px; }
+    .work-detail .share .social li {
+      display: inline-block; }
+      .work-detail .share .social li + li a {
+        margin-left: 15px; }
+    .work-detail .share .social a {
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      border-radius: 100%;
+      background-color: #f9f9f9;
+      color: #c4c4c4;
+      text-align: center;
+      -webkit-transition: background-color 0.5s;
+      -moz-transition: background-color 0.5s;
+      -ms-transition: background-color 0.5s;
+      -o-transition: background-color 0.5s;
+      transition: background-color 0.5s; }
+      .work-detail .share .social a:hover {
+        background-color: #bc5b6e;
+        color: #fff; }
+  .work-detail .share .pagination {
+    display: block;
+    margin: 50px 15px 0 15px;
+    padding: 30px 0 0 0;
+    border-top: 1px solid #f1f1f1;
+    border-radius: 0;
+    font-size: 18px; }
+    .work-detail .share .pagination a {
+      color: #e5e5e5; }
+      .work-detail .share .pagination a:hover {
+        color: #c5c5c5; }
+    .work-detail .share .pagination .arrow {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      font-size: 14px;
+      text-align: center;
+      border: 1px solid #e5e5e5; }
+      .work-detail .share .pagination .arrow:hover {
+        border-color: #c5c5c5; }
+
+/* -----------------------------------------------------------------------------
+// 5. News Page
+// ----------------------------------------------------------------------------- */
+.news .section-headline {
+  margin-bottom: 50px;
+  text-align: center; }
+  .news .section-headline h3 {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 500; }
+  .news .section-headline p {
+    font-size: 18px; }
+.news .hero-title {
+  background: url(http://placehold.it/1895x1000) center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+.news .post {
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #e5e5e5; }
+  .news .post img {
+    margin-bottom: 20px; }
+  .news .post h4 {
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 5px; }
+  .news .post .date {
+    font-size: 12px;
+    margin-bottom: 30px; }
+  .news .post .btn {
+    margin-bottom: 20px;
+    color: #181818;
+    text-transform: uppercase; }
+  .news .post .n-post-slider .owl-pagination {
+    position: absolute;
+    bottom: 30px; }
+    .news .post .n-post-slider .owl-pagination .owl-page + .owl-page {
+      margin-left: 15px; }
+    .news .post .n-post-slider .owl-pagination .owl-page span {
+      display: inline-block;
+      width: 3px;
+      height: 3px;
+      margin: 0;
+      opacity: 1;
+      border: none;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      border-radius: 100%;
+      background-color: #fff; }
+    .news .post .n-post-slider .owl-pagination .owl-page.active span {
+      position: relative;
+      border: none;
+      background: #fff; }
+    .news .post .n-post-slider .owl-pagination .owl-page.active span:before {
+      content: ' ';
+      position: absolute;
+      top: -9px;
+      left: -9px;
+      background-color: #fff;
+      opacity: .2;
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      border-radius: 100%; }
+  .news .post-blockquote {
+    padding: 20px 25px; }
+    .news .post-blockquote p {
+      line-height: 28px;
+      font-style: italic;
+      font-size: 18px;
+      color: #4b4b4b;
+      font-weight: 600; }
+      .news .post-blockquote p:before {
+        font-family: 'FontAwesome';
+        content: '\f10d';
+        color: #bc5b6e;
+        display: block;
+        font-style: normal;
+        margin-bottom: 15px;
+        text-align: center; }
+    .news .post-blockquote strong {
+      display: block;
+      margin-top: 30px;
+      font-family: "Oswald", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      font-style: normal;
+      color: #bc5b6e;
+      text-transform: uppercase; }
+
+/* -----------------------------------------------------------------------------
+// 6. News Detail Page
+// ----------------------------------------------------------------------------- */
+.news-detail .section-headline {
+  margin-bottom: 50px;
+  text-align: center; }
+  .news-detail .section-headline h3 {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 500; }
+  .news-detail .section-headline p {
+    font-size: 18px; }
+.news-detail .hero-title {
+  background: url(http://placehold.it/1895x1000) center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 500px 0 100px 0; }
+.news-detail .post-navigation {
+  position: relative;
+  padding: 50px 0; }
+  .news-detail .post-navigation a {
+    font-family: "Oswald", Helvetica, Arial, sans-serif;
+    color: #4b4b4b;
+    text-transform: uppercase; }
+    .news-detail .post-navigation a i {
+      position: relative;
+      bottom: -8px;
+      color: #4b4b4b; }
+    .news-detail .post-navigation a:hover {
+      text-decoration: none; }
+  .news-detail .post-navigation .grid i {
+    color: #bc5b6e; }
+  .news-detail .post-navigation i {
+    font-size: 26px;
+    color: #bc5b6e; }
+  .news-detail .post-navigation .previous i {
+    margin-right: 15px; }
+  .news-detail .post-navigation .next i {
+    margin-left: 15px; }
+  .news-detail .post-navigation:after {
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #e5e5e5; }
+.news-detail .post .post-intro {
+  font-size: 18px;
+  margin-bottom: 50px;
+  color: #4b4b4b;
+  line-height: 28px; }
+.news-detail .post h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 50px; }
+.news-detail .post .post-gallery img {
+  width: 33%; }
+  .news-detail .post .post-gallery img + img {
+    margin-left: .1%; }
+@media (max-width: 992px) {
+  .news-detail .post .post-gallery img {
+    width: 32%; } }
+.news-detail .post .post-banner {
+  height: 500px;
+  overflow: hidden; }
+@media (max-width: 992px) {
+  .news-detail .post .post-banner {
+    height: 100%; } }
+.news-detail .post .space {
+  padding: 50px 0; }
+  .news-detail .post .space:before, .news-detail .post .space:after {
+    content: " ";
+    display: table; }
+  .news-detail .post .space:after {
+    clear: both; }
+.news-detail .post .meta {
+  padding: 40px 0;
+  border-top: 1px solid #e5e5e5; }
+  .news-detail .post .meta:before, .news-detail .post .meta:after {
+    content: " ";
+    display: table; }
+  .news-detail .post .meta:after {
+    clear: both; }
+  .news-detail .post .meta .social {
+    padding: 0; }
+    .news-detail .post .meta .social li {
+      display: inline;
+      list-style-type: none; }
+    .news-detail .post .meta .social a {
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      margin-right: 10px;
+      line-height: 35px;
+      text-align: center;
+      color: #c4c4c4;
+      border-radius: 100%;
+      background-color: #f9f9f9;
+      -webkit-transition: background-color 0.5s;
+      -moz-transition: background-color 0.5s;
+      -ms-transition: background-color 0.5s;
+      -o-transition: background-color 0.5s;
+      transition: background-color 0.5s; }
+      .news-detail .post .meta .social a:hover {
+        background-color: #bc5b6e;
+        color: #fff; }
+  .news-detail .post .meta .tagged strong {
+    margin-right: 3px;
+    text-transform: uppercase;
+    font-family: "Oswald", Helvetica, Arial, sans-serif; }
+.news-detail .post .post-comments {
+  margin-top: 100px; }
+  .news-detail .post .post-comments h3 {
+    font-size: 28px;
+    text-align: left;
+    margin: 0 0 10px 0; }
+  .news-detail .post .post-comments .btn {
+    float: right;
+    margin-top: -8px;
+    background-color: #e5e5e5;
+    border-color: #e5e5e5;
+    font-size: 12px;
+    color: #9c9c9c;
+    padding: 12px 25px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+    .news-detail .post .post-comments .btn i {
+      display: inline-block;
+      margin-left: 20px; }
+    .news-detail .post .post-comments .btn:hover {
+      background-color: transparent;
+      border-color: #9c9c9c; }
+  .news-detail .post .post-comments .comment {
+    padding: 30px 0; }
+    .news-detail .post .post-comments .comment:before, .news-detail .post .post-comments .comment:after {
+      content: " ";
+      display: table; }
+    .news-detail .post .post-comments .comment:after {
+      clear: both; }
+    .news-detail .post .post-comments .comment + .comment {
+      border-top: 1px solid #e5e5e5; }
+    .news-detail .post .post-comments .comment-avatar {
+      width: 70px;
+      height: 70px;
+      border-radius: 100%;
+      float: left;
+      overflow: hidden; }
+      .news-detail .post .post-comments .comment-avatar img {
+        margin: 0; }
+    .news-detail .post .post-comments .comment .align {
+      float: left;
+      margin-left: 30px;
+      width: 81%; }
+    @media (max-width: 992px) {
+      .news-detail .post .post-comments .comment .align {
+        width: 70%; } }
+    .news-detail .post .post-comments .comment h5 {
+      display: inline-block;
+      text-transform: uppercase;
+      color: #4b4b4b;
+      margin: 0 10px 20px 0;
+      font-weight: 700; }
+    .news-detail .post .post-comments .comment .date {
+      font-size: 12px; }
+    .news-detail .post .post-comments .comment .reply {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #4b4b4b; }
+      .news-detail .post .post-comments .comment .reply i {
+        display: inline-block;
+        margin-right: 7px;
+        font-size: 14px;
+        position: relative;
+        top: 3px; }
+.news-detail .post .comment-form {
+  margin-top: 100px; }
+  .news-detail .post .comment-form h3 {
+    text-align: left;
+    margin: 0 0 40px 0; }
+  .news-detail .post .comment-form .form-control {
+    background-color: #f9f9f9;
+    text-transform: uppercase;
+    font-family: "Oswald", Helvetica, Arial, sans-serif;
+    color: #4b4b4b;
+    font-weight: 400; }
+    .news-detail .post .comment-form .form-control:focus {
+      border-color: #bc5b6e; }
+
+/* -----------------------------------------------------------------------------
+// 7. Contact
+// ----------------------------------------------------------------------------- */
+.contact-page .section-headline {
+  margin-bottom: 50px;
+  text-align: center; }
+  .contact-page .section-headline h3 {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 500; }
+  .contact-page .section-headline p {
+    font-size: 18px; }
+.contact-page .contact-map {
+  position: relative; }
+  .contact-page .contact-map .color-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+    z-index: 10;
+    background-color: #bc5b6e; }
+  .contact-page .contact-map #map {
+    width: 100%;
+    height: 400px;
+    z-index: 0;
+    position: relative; }
+.contact-page .contact-info h5 {
+  text-transform: uppercase;
+  font-weight: 500; }
+  @media (max-width: 992px) {
+    .contact-page .contact-info h5 + h5 {
+      margin-bottom: 30px; } }
+.contact-page .contact .form-control {
+  background-color: #fff;
+  color: #4b4b4b;
+  font-family: "Oswald", Helvetica, Arial, sans-serif;
+  text-transform: uppercase; }
+
+/*# sourceMappingURL=pages.css.map */

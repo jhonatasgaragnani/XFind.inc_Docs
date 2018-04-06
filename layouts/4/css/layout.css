@@ -1,0 +1,115 @@
+/*
+// Table of content
+// -----------------------------------------------------------------------------
+// - 1. Header
+// - 2. Footer
+// - 3. Hero Title
+*/
+/* -----------------------------------------------------------------------------
+// 1. Header 
+// ----------------------------------------------------------------------------- */
+header {
+  position: relative; }
+
+/* -----------------------------------------------------------------------------
+// 2. Footer 
+// ----------------------------------------------------------------------------- */
+footer {
+  padding: 100px 0 0 0;
+  background-color: #181818; }
+
+.footer-main h4 {
+  margin-bottom: 30px;
+  color: #fff;
+  text-transform: uppercase; }
+  .footer-main h4 + p {
+    margin-bottom: 20px; }
+.footer-main p {
+  color: #717171; }
+.footer-main em {
+  color: #fff;
+  font-style: normal; }
+.footer-main .social {
+  padding: 0;
+  margin-top: 20px; }
+  .footer-main .social li {
+    display: inline;
+    list-style-type: none; }
+  .footer-main .social a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    line-height: 35px;
+    text-align: center;
+    color: #717171;
+    border-radius: 100%;
+    background-color: #242424;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -ms-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    transition: background-color 0.5s; }
+    .footer-main .social a:hover {
+      background-color: #bc5b6e;
+      color: #fff; }
+.footer-main .list li:before {
+  color: #717171; }
+.footer-main .list a {
+  color: #717171;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s; }
+.footer-main .list li:hover a {
+  color: #fff;
+  text-decoration: none; }
+.footer-main .list li:hover:before {
+  color: #bc5b6e;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s; }
+.footer-main .products img {
+  width: 23%;
+  margin: 0 0.5% 10px 0.5%; }
+@media (max-width: 992px) {
+  .footer-main .footer-col {
+    margin-bottom: 50px; } }
+
+.footer-copyright {
+  background-color: #131313;
+  margin-top: 50px;
+  padding: 20px 0 10px 0;
+  font-family: "Oswald", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center; }
+
+/* -----------------------------------------------------------------------------
+// 3. Hero Title 
+// ----------------------------------------------------------------------------- */
+.hero-title {
+  padding: 150px 0;
+  background-color: #aeaeae;
+  text-align: center; }
+  .hero-title h2 {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 54px;
+    color: #fff; }
+    .hero-title h2:before {
+      content: ' ';
+      width: 130px;
+      height: 4px;
+      background-color: #fff;
+      display: block;
+      border-radius: 2px;
+      margin: 0 auto 30px auto; }
+  .hero-title p {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+
+/*# sourceMappingURL=layout.css.map */

@@ -1,0 +1,36 @@
+/*-----------------------------------------------------------------------------
+	Buna is a modern and unique PSD template.
+	Designed for professionals and freelancers 
+	Who's looking for a theme.
+	
+	Table of Contents:
+
+ 1) Minimal Vertical menu
+ 2) Push classes
+ 3) Transitions
+
+------------------------------------------------------------------------------*/
+
+	/*-- minimal Vertical menu that slides from the right --*/
+.cbp-spmenu-right {
+	right: -350px;
+	}
+.cbp-spmenu-right.cbp-spmenu-open {
+	right: 0px;
+	}
+	/*-- Push classes applied to the body --*/
+.cbp-spmenu-push {
+	overflow-x: hidden;
+	position: relative;
+	left: 0;
+	}
+.cbp-spmenu-push-toleft {
+	left: -340px;
+	}
+	/*-- Transitions --*/
+.cbp-spmenu,.cbp-spmenu-push {
+	-webkit-transition: all 500ms ease-in-out;
+	-moz-transition: all 500ms ease-in-out;
+	transition: all 500ms ease-in-out;
+	}
+	/*-- end minimal Vertical menu that slides from the right --*/
